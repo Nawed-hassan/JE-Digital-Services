@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.google.com; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">  <!-- Prevents embedding in iframes -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">  <!-- Stops MIME-type sniffing -->
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">  <!-- Limits referrer info -->
+
     <title>JE Digital Service</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
